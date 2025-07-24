@@ -6,7 +6,7 @@ export default async function BooksFech() {
   const getBook = async () => {
     console.log("fetching book......", Date.now());
     // await new Promise((resolve) => setTimeout(resolve, 3000));
-    const response = await axios.get("/book/979-11-57");
+    const response = await axios.get("/book/979-11-5839");
     // throw new Error("Someting wrong!!!!");
     console.log(response.data);
     return response.data;
