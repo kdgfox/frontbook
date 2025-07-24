@@ -1,7 +1,6 @@
 import { Metadata } from "next";
 import styles from "./book.module.scss";
 import Link from "next/link";
-import { CartProvider } from "@/store/book-mark";
 
 export const metadata: Metadata = {
   title: "Book 정보",
