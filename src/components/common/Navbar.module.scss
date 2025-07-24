@@ -1,0 +1,46 @@
+@use "@/style/base" as base;
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 24px;
+  background-color: base.$secondary-color;
+
+  .navLinks {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    font-size: 14px;
+
+    li {
+      cursor: pointer;
+
+      &:hover {
+        color: #0000ff;
+      }
+      a {
+        text-decoration: none;
+      }
+    }
+    .arrow {
+      font-size: 10px;
+      margin-left: 2px;
+    }
+  }
+
+  .search {
+    display: flex;
+    align-items: center;
+
+    input {
+      padding: 6px 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px 0 0 4px;
+    }
+
+    button {
+      padding: 6px 12px;
+      @include base.button-outline(base.$login-color, base.$login-hover-color);
+    }
+  }
+}

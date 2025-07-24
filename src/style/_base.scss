@@ -1,0 +1,43 @@
+$primary-color: #007bff;
+$secondary-color: #f8f9fa;
+$netural-color: white;
+$primary-hover-color: #f0f8ff;
+$title-color: #d7f5fb;
+$login-color: purple;
+$login-hover-color: #f8f9fa;
+
+@mixin button-basic($bgcolor, $hover-color) {
+  padding: 0.5rem 1rem;
+  border: 0;
+  background-color: $bgcolor;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $hover-color;
+  }
+}
+
+@mixin button-outline($bgcolor, $hover-color) {
+  padding: 0.5rem 1rem;
+  border: 1px solid $bgcolor;
+  background-color: white;
+  color: $bgcolor;
+  border-radius: 5px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $hover-color;
+  }
+}
+
+@mixin border {
+  border: 1px solid #ddd;
+}
+
+@mixin column-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

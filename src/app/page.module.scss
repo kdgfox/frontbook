@@ -1,0 +1,115 @@
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.title {
+  background-color: #d7f5fb;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.bookList {
+  border: 1px solid #eee;
+  padding: 1rem;
+  background-color: #fff;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.registerButton {
+  background-color: white;
+  color: #007bff;
+  border: 1px solid #007bff;
+  border-radius: 6px;
+  padding: 0.3rem 1rem;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #f0f8ff;
+  }
+}
+
+.searchArea {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.select,
+.searchInput {
+  padding: 0.3rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.searchButton {
+  background-color: #222;
+  color: white;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #444;
+  }
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+
+  th,
+  td {
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+    padding: 0.75rem;
+  }
+
+  th {
+    font-weight: bold;
+  }
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.link {
+  color: #007bff;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.pagination {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+
+  button {
+    padding: 0.5rem 1rem;
+    border: 1px solid #007bff;
+    background-color: white;
+    color: #007bff;
+    border-radius: 5px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #f0f8ff;
+    }
+  }
+}

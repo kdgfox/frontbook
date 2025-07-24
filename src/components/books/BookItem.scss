@@ -1,0 +1,28 @@
+@use "@/style/base" as base;
+
+.book {
+  &-row {
+    td {
+      padding: 10px;
+      @include base.border;
+      text-align: center;
+    }
+  }
+  &-thumbnail {
+    width: 50px;
+    height: auto;
+    border-radius: 4px;
+  }
+}
+
+.select-button {
+  background-color: base.$primary-color;
+  color: base.$netural-color;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  &:hover {
+    background-color: base.$primary-hover-color;
+  }
+}

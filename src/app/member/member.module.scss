@@ -1,0 +1,133 @@
+@use "@/style/base" as base;
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.nav {
+  display: flex;
+  justify-content: start;
+  gap: 20px;
+  list-style: none;
+  font-size: 14px;
+  li {
+    cursor: pointer;
+
+    &:hover {
+      color: #0000ff;
+    }
+    a {
+      text-decoration: none;
+    }
+  }
+}
+
+.title {
+  background-color: base.$title-color;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.bookList {
+  @include base.border;
+  padding: 1rem;
+  background-color: base.$netural-color;
+}
+
+.header {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.registerButton {
+  @include base.button-outline(base.$primary-color, base.$primary-hover-color);
+  padding: 0.3rem 1rem;
+}
+
+.searchArea {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.select,
+.searchInput {
+  padding: 0.3rem;
+  @include base.border;
+  border-radius: 4px;
+}
+
+.searchButton {
+  @include base.button-outline(base.$primary-color, base.$primary-hover-color);
+  padding: 0.4rem 0.8rem;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+
+  th,
+  td {
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+    padding: 0.75rem;
+  }
+
+  th {
+    font-weight: bold;
+  }
+  .readonly {
+    background-color: #f0f0f0;
+    color: #888;
+    pointer-events: none;
+  }
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.link {
+  color: #007bff;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+.buttonGroup {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+
+  button {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #0056b3;
+    }
+  }
+}
+.pagination {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+
+  button {
+    @include base.button-outline(base.$primary-color, base.$primary-hover-color);
+  }
+}
