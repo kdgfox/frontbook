@@ -10,3 +10,9 @@ export interface Book {
 export interface BookProps {
   book: Book;
 }
+
+export interface BookSearchParams {
+  key?: string;
+  word?: string;
+  pageNo?: number;
+}
